@@ -44,12 +44,12 @@ public class GameManager : MonoBehaviour
     public void LoadMainMenu()
     {
         FindObjectOfType<ScoreBoard>().ResetScore();
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
 
     }
     public void StartGame()
     {
-        SceneManager.LoadScene("NaziInvation");
+        SceneManager.LoadScene("Atlantis");
         FindObjectOfType<ScoreBoard>().ResetScore();
     }
     public IEnumerator LoadGameOverAftherSeconds()
